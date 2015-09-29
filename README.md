@@ -35,6 +35,7 @@ To build your own version of Strut you'll need Grunt v0.4.0 or later.
 2. Clone Strut: `git clone git://github.com/tantaman/Strut.git`
 3. `cd Strut`
 4. Install Strut's development dependencies: `npm install`
+** If you have a problem with phantomjs, do : `npm install grunt-mocha --save-dev`**
 5. Run Strut: `grunt server` (the server runs at localhost:9000)
 
 To make a production build of Strut run `grunt build`.
