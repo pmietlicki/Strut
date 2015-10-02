@@ -80,7 +80,7 @@ define(['libs/backbone',
 			},
 
 			newPresentation: function() {
-				var num = window.sessionMeta.num || 0;
+				/*var num = window.sessionMeta.num || 0;
 
 				num += 1;
 				window.sessionMeta.num = num;
@@ -89,7 +89,7 @@ define(['libs/backbone',
 	        		fileName: "presentation-" + num,
 	        		slides: []
 	      		});
-				this._deck.create();
+				this._deck.create();*/
 			},
 
 			/**
@@ -109,6 +109,7 @@ define(['libs/backbone',
 
 			importPresentation: function(rawObj) {
 				// deck disposes iteself on import?
+				rawObj.fileName = "presentation-unnamed";
 				console.log('New file name: ' + rawObj.fileName);
 				this._deck.import(rawObj);
 			},

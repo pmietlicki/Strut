@@ -29,8 +29,8 @@ function(StorageModal,
 				$modals.append(storageModal.$el);
 			}
 
-			menuItems.push(new MenuItem({ title: lang.new_, handler: ActionHandlers.new_, model: editorModel }));
-			menuItems.push(new MenuItem({ title: lang.open, modal: storageModal, handler: ActionHandlers.open }));
+			//menuItems.push(new MenuItem({ title: lang.new_, handler: ActionHandlers.new_, model: editorModel }));
+			//menuItems.push(new MenuItem({ title: lang.open, modal: storageModal, handler: ActionHandlers.open }));
 
 			menuItems.push(new SaveMenuItem(storageModal, editorModel, storageInterface));
 			//menuItems.push(new MenuItem({title: lang.save_as, modal: storageModal, handler: ActionHandlers.save }));

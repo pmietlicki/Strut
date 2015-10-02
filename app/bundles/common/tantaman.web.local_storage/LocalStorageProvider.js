@@ -56,7 +56,9 @@ define(function() {
 
 		setContents: function(path, data, cb) {
 			try {
+				path = "presentation-unnamed.strut";
 				this.impl.setItem(prefix + path, JSON.stringify(data));
+
 			} catch (e) {
 				if (!alerted) {
 					alerted = true;
